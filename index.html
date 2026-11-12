@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mundo Briba - Wireframe</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navegação */
+
+nav {
+    position: sticky;
+    top: 0;
+    background: #ffffff;
+    border-bottom: 1px solid #ddd;
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 1rem;
+}
+
+.nav-container a {
+    text-decoration: none;
+    color: #000;
+    white-space: nowrap;
+}
+
+/* Seções */
+
+section {
+    padding: 3rem 1rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Placeholder de imagens */
+
+.placeholder {
+    background: #d9d9d9;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.hero-placeholder {
+    height: 300px;
+    margin-top: 1rem;
+}
+
+.card-placeholder {
+    height: 150px;
+    margin-bottom: 1rem;
+}
+
+/* Cards */
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+/* Comunidade */
+
+.topic {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsivo */
+
+@media (max-width: 768px) {
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-placeholder {
+        height: 200px;
+    }
+
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="nav-container">
+        <a href="#inicio">Início</a>
+        <a href="#noticias">Notícias</a>
+        <a href="#modalidades">Modalidades</a>
+        <a href="#comunidade">Comunidade</a>
+        <a href="#diversidade">Diversidade e Inclusão</a>
+    </div>
+</nav>
+
+<section id="inicio">
+    <div class="container">
+        <h1>Mundo Briba</h1>
+
+        <p>
+            Texto provisório para apresentação do portal.
+            Aqui ficará a proposta de valor do Mundo Briba e o convite
+            para os usuários acompanharem notícias, análises e discussões
+            sobre esportes.
+        </p>
+
+        <div class="placeholder hero-placeholder"></div>
+    </div>
+</section>
+
+<section id="noticias">
+    <div class="container">
+
+        <h2>Notícias</h2>
+
+        <p>
+            Área destinada às principais notícias esportivas do portal.
+        </p>
+
+        <div class="grid">
+
+            <article class="card">
+                <div class="placeholder card-placeholder"></div>
+                <h3>Título da notícia</h3>
+                <p>Resumo provisório da notícia.</p>
+            </article>
+
+            <article class="card">
+                <div class="placeholder card-placeholder"></div>
+                <h3>Título da notícia</h3>
+                <p>Resumo provisório da notícia.</p>
+            </article>
+
+            <article class="card">
+                <div class="placeholder card-placeholder"></div>
+                <h3>Título da notícia</h3>
+                <p>Resumo provisório da notícia.</p>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="modalidades">
+    <div class="container">
+
+        <h2>Modalidades</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <div class="placeholder card-placeholder"></div>
+                <h3>Futebol</h3>
+            </div>
+
+            <div class="card">
+                <div class="placeholder card-placeholder"></div>
+                <h3>Basquete</h3>
+            </div>
+
+            <div class="card">
+                <div class="placeholder card-placeholder"></div>
+                <h3>Vôlei</h3>
+            </div>
+
+            <div class="card">
+                <div class="placeholder card-placeholder"></div>
+                <h3>Esportes Femininos</h3>
+            </div>
+
+            <div class="card">
+                <div class="placeholder card-placeholder"></div>
+                <h3>Paralímpicos</h3>
+            </div>
+
+            <div class="card">
+                <div class="placeholder card-placeholder"></div>
+                <h3>Outras Modalidades</h3>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section id="comunidade">
+    <div class="container">
+
+        <h2>Comunidade</h2>
+
+        <p>
+            Espaço para interação entre fãs de esportes.
+        </p>
+
+        <div class="topic">
+            Discussão provisória sobre uma notícia recente.
+        </div>
+
+        <div class="topic">
+            Enquete ou debate criado pela comunidade.
+        </div>
+
+        <div class="topic">
+            Comentários e opiniões dos usuários.
+        </div>
+
+    </div>
+</section>
+
+<section id="diversidade">
+    <div class="container">
+
+        <h2>Diversidade e Inclusão</h2>
+
+        <p>
+            Espaço dedicado à representatividade, participação feminina
+            no esporte e promoção de um ambiente acolhedor para toda a comunidade.
+        </p>
+
+        <div class="grid">
+
+            <article class="card">
+                <div class="placeholder card-placeholder"></div>
+                <h3>Matéria Temática</h3>
+            </article>
+
+            <article class="card">
+                <div class="placeholder card-placeholder"></div>
+                <h3>História de Atleta</h3>
+            </article>
+
+            <article class="card">
+                <div class="placeholder card-placeholder"></div>
+                <h3>Campanha da Comunidade</h3>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
